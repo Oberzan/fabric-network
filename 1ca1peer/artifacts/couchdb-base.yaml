@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  couchdb-base:
+    image: hyperledger/fabric-couchdb:x86_64-1.0.2
+    environment:
+      - COUCHDB_USER=IBM_blockchain
+      - COUCHDB_PASSWORD=blockchain
