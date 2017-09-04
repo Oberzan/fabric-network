@@ -40,7 +40,7 @@ function restartNetwork() {
 	rm -rf /tmp/hfc-test-kvs_peerOrg* $HOME/.hfc-key-store/ /tmp/fabric-client-kvs_peerOrg*
 
 	#Start the network
-	docker-compose up -d ca.org1.example.com ca.org2.example.com peer0.org1.example.com peer1.org1.example.com peer0.org2.example.com peer1.org2.example.com 
+	docker-compose up -d ca.org1.example.com peer0.org1.example.com
 	cd -
 	echo
 }
